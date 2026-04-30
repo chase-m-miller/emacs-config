@@ -13,6 +13,8 @@
 
 ;; Make C code conform to the linux kernel style guide
 (setq c-default-style "linux")
+(setq c-ts-mode-indent-style 'linux)
+(setq c-ts-mode-indent-offset 8)
 
 ;; Don't use unicode symbols in the mode line (it increases load time)
 (setq pdf-view-use-unicode-ligther nil)
@@ -27,6 +29,10 @@
 ;; Use S-<arrow> for windmove
 (windmove-default-keybindings)
 
+;; Use treesitter modes for C/C++
+(add-to-list 'major-mode-remap-alist '(c++-mode . c++-ts-mode))
+(add-to-list 'major-mode-remap-alist '(c-mode . c-ts-mode))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Enable/Load Packages ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -37,11 +43,11 @@
 (package-initialize)
 
 ;; Enable various modes
-(pdf-tools-install)   ;; PDF reader
-(electric-pair-mode)  ;; Auto-complete pairs like "", {}, or ()
-(windmove-mode)       ;; Switch windows with S-<arrowkey>
-(recentf-mode)        ;; Open recent files
-(fido-mode)           ;; Better ido-like completion
+(pdf-tools-install)        ;; PDF reader
+(electric-pair-mode)       ;; Auto-complete pairs like "", {}, or ()
+(windmove-mode)            ;; Switch windows with S-<arrowkey>
+(recentf-mode)             ;; Open recent files
+(fido-mode)                ;; Better ido-like completion
 
 ;; Load 'tetris' (Remove on non-Fedora systems)
 (load "/usr/share/emacs/30.2/lisp/play/tetris.elc")
