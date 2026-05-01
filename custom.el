@@ -20,7 +20,8 @@
  '(package-selected-packages
    '(ace-jump-mode evil geiser-guile geiser-racket json-mode magit
 		   markdown-mode mpdel paredit pdf-tools
-		   solarized-theme vterm))
+		   solarized-theme tree-sitter tree-sitter-langs
+		   treesit-auto vterm))
  '(tool-bar-mode nil)
  '(whitespace-style
    '(face trailing tabs spaces lines-tail newline missing-newline-at-eof
