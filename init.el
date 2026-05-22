@@ -4,7 +4,7 @@
 
 ;; Load 'custom-file'
 (setq custom-file "~/.emacs.d/custom.el")
-(load custom-file)
+(load custom-file 'noerror)
 
 ;; Disable menu bars and window decorations
 (tool-bar-mode -1)
