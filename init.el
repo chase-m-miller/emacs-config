@@ -51,9 +51,6 @@
 (recentf-mode)             ;; Open recent files
 (fido-mode)                ;; Better ido-like completion
 
-;; Load 'tetris' (Remove on non-Fedora systems)
-(load "/usr/share/emacs/30.2/lisp/play/tetris.elc")
-
 ;; Load 'ace-jump-mode'
 (autoload
   'ace-jump-mode
