@@ -47,7 +47,7 @@
 ;; Enable various modes
 (pdf-tools-install)        ;; PDF reader
 (electric-pair-mode)       ;; Auto-complete pairs like "", {}, or ()
-(windmove-mode)            ;; Switch windows with S-<arrowkey>
+(windmove-mode)            ;; Switch windows with S-<arrow>
 (recentf-mode)             ;; Open recent files
 (fido-mode)                ;; Better ido-like completion
 
