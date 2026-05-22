@@ -30,8 +30,10 @@
 (windmove-default-keybindings)
 
 ;; Use treesitter modes for C/C++
-(add-to-list 'major-mode-remap-alist '(c++-mode . c++-ts-mode))
-(add-to-list 'major-mode-remap-alist '(c-mode . c-ts-mode))
+(add-to-list 'major-mode-remap-alist
+	     '(c++-mode . c++-ts-mode))
+(add-to-list 'major-mode-remap-alist
+	     '(c-mode . c-ts-mode))
 (add-to-list 'major-mode-remap-alist
              '(c-or-c++-mode . c-or-c++-ts-mode))
 
@@ -41,7 +43,9 @@
 
 ;; Set up MELPA
 (require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives
+	     '("melpa" . "https://melpa.org/packages/")
+	     t)
 (package-initialize)
 
 ;; Enable various modes
