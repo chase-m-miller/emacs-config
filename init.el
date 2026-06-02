@@ -11,9 +11,6 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
-;; Org table header visible when scrolling
-(add-hook 'org-mode-hook #'org-table-header-line-mode)
-
 ;; Make C code conform to the linux kernel style guide
 (setq c-default-style "linux")
 (setq c-ts-mode-indent-style 'linux)
@@ -91,6 +88,9 @@
 ;;;;;;;;;;;;;
 ;;; Hooks ;;;
 ;;;;;;;;;;;;;
+
+;; Org table header visible when scrolling
+(add-hook 'org-mode-hook #'org-table-header-line-mode)
 
 ;; Add 'paredit-mode' to mode hooks
 (add-hook 'geiser-mode-hook #'enable-paredit-mode)
