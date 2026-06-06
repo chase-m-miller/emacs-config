@@ -35,7 +35,7 @@
 (add-to-list 'major-mode-remap-alist
 	     '(c-mode . c-ts-mode))
 (add-to-list 'major-mode-remap-alist
-             '(c-or-c++-mode . c-or-c++-ts-mode))
+	     '(c-or-c++-mode . c-or-c++-ts-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Enable/Load Packages ;;;
@@ -49,11 +49,11 @@
 (package-initialize)
 
 ;; Enable various modes
-(pdf-tools-install)        ;; PDF reader
-(electric-pair-mode)       ;; Auto-complete pairs like "", {}, or ()
-(windmove-mode)            ;; Switch windows with S-<arrow>
-(recentf-mode)             ;; Open recent files
-(fido-mode)                ;; Better ido-like completion
+(pdf-tools-install)   ;; PDF reader
+(electric-pair-mode)  ;; Auto-complete pairs like "", {}, or ()
+(windmove-mode)       ;; Switch windows with S-<arrow>
+(recentf-mode)        ;; Open recent files
+(fido-mode)           ;; Better ido-like completion
 
 ;; Load 'ace-jump-mode'
 (autoload
