@@ -99,3 +99,4 @@
 ;; Add my config functions to mode hooks
 (add-hook 'conf-mode-hook #'my-conf-setup)
 (add-hook 'dired-mode-hook #'my-dired-setup)
+(put 'scroll-left 'disabled nil)
