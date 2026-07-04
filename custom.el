@@ -15,6 +15,7 @@
      "51ec7bfa54adf5fff5d466248ea6431097f5a18224788d0bd7eb1257a4f7b773"
      "36d4b9573ed57b3c53261cb517eef2353058b7cf95b957f691f5ad066933ae84"
      default))
+ '(large-file-warning-threshold 100000000)
  '(org-agenda-files
    '("~/.emacs.d/agenda.org" "/home/chase/.emacs.d/journal.org"))
  '(package-selected-packages
