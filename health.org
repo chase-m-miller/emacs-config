@@ -1,4 +1,4 @@
--*- mode:save-place-local; mode:org; -*-
+-*- eval: (save-place-local-mode 1) -*-
 |       Date       |  Weight   |  Change  |  Squat  | Deadlift |  Bench   | Overhead |
 |------------------+-----------+----------+---------+----------+----------+----------|
 |       <c>        |    <c>    |   <c>    |   <c>   |   <c>    |   <c>    |   <c>    |
