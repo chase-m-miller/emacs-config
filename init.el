@@ -2,6 +2,9 @@
 ;;; Options ;;;
 ;;;;;;;;;;;;;;;
 
+;; Maximize emacs frames by default
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
 ;; Load 'custom-file'
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file 'noerror)
